@@ -1,5 +1,6 @@
 import { sum, mult } from "./lib"
-import "./styles/index.css"
+// import "./styles/index.css"
+import "./styles/index.scss"
 
 window.onload = function() {
   init()

@@ -1,0 +1,8 @@
+@import "theme";
+
+body {
+  background-color: $theme-dark;
+  div {
+    background-color: $theme-light;
+  }
+}
