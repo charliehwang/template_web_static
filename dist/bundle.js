@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const root = document.createElement(\"div\")\nroot.innerHTML = `<p>Hello Webpack.</p>`\ndocument.body.appendChild(root)\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib */ \"./src/lib.js\");\n\n\nwindow.onload = function() {\n  init()\n}\n\nfunction init() {\n  outputHtmlDiv(\"Hello from WebPack.\")\n  runLibFunctions()\n}\n\nfunction runLibFunctions() {\n  outputHtmlDiv(`Sum Fn: ${Object(_lib__WEBPACK_IMPORTED_MODULE_0__[\"sum\"])(1, 2)}`)\n  outputHtmlDiv(`Mult Fn: ${Object(_lib__WEBPACK_IMPORTED_MODULE_0__[\"mult\"])(9, 9)}`)\n}\n\nfunction outputHtmlDiv(text) {\n  const root = document.createElement(\"div\")\n  root.innerHTML = text\n  document.body.appendChild(root)\n}\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/lib.js":
+/*!********************!*\
+  !*** ./src/lib.js ***!
+  \********************/
+/*! exports provided: default, sum, mult */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sum\", function() { return sum; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mult\", function() { return mult; });\nconst sum = function(a, b) {\n  return a + b\n}\n\nconst mult = function(a, b) {\n  return a * b\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (sum);\n\n\n\n//# sourceURL=webpack:///./src/lib.js?");
 
 /***/ })
 
