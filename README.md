@@ -4,8 +4,15 @@ Use this as a starting point for a small local web app.
 
 ## Getting Started
 
+Clone the project
+
 ```
 git clone https://github.com/charliehwang/template_web_static.git
+```
+
+Install dependencies
+
+```
 npm i
 ```
 
