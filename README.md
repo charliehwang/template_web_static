@@ -1,6 +1,6 @@
 # Template for a Static Web App
 
-Use this as a starting point for a small local web app.
+Use this as a starting point for a local file web app.
 
 ## Getting Started
 
