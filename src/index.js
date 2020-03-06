@@ -7,7 +7,7 @@ window.onload = function() {
 }
 
 function init() {
-  outputHtmlDiv("Hello from WebPack.")
+  outputHtmlDiv("Hello from Webpacks.")
   runLibFunctions()
 }
 
@@ -20,4 +20,13 @@ function outputHtmlDiv(text) {
   const root = document.createElement("div")
   root.innerHTML = text
   document.body.appendChild(root)
+}
+
+//----- HMR (Hot Module Replacement) ------------
+// Remove the most recently-added <div> so that when the code runs again and
+// adds a new <div>, we don't end up with duplicate divs.
+if (module.hot) {
+  module.hot.dispose(function() {
+    // sideEffectNode.parentNode.removeChild(sideEffectNode)
+  })
 }
