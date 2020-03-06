@@ -1,6 +1,6 @@
 # Template for a Static Web App
 
-Use this as a starting point for a local file web app.
+Use this as a starting point for a local file web app. The html template is located in "./src/index.html". JS/SCSS and test files are also located also in the same "./src" directory.
 
 ## Getting Started
 
@@ -15,8 +15,6 @@ Install dependencies
 ```
 npm i
 ```
-
-The html template is located in "./src/index.html". All other source files are located also in the same "./src" directory.
 
 You can run the Development Server like so:
 
