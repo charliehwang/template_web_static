@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "devserver": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base=dist --inline --watch --hot --watchContentBase=true",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests": "export LOG_LEVEL=debug && ./node_modules/jest/bin/jest.js --no-cache ./src/",
+    "tests_watch": "export LOG_LEVEL=debug && ./node_modules/jest/bin/jest.js --no-cache --watch ./src/",
     "develop": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
